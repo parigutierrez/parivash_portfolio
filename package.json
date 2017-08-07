@@ -1,0 +1,23 @@
+{
+  "name": "parivash_portfolio",
+  "version": "1.0.0",
+  "description": "Portafolio front-end developer y web designer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portafoloio",
+    "web",
+    "designer"
+  ],
+  "author": "Parivash Gutiérrez",
+  "license": "ISC",
+  "devDependencies": {
+    "aos": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "materialize-css": "^0.100.1"
+  }
+}

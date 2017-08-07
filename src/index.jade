@@ -1,0 +1,148 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title Portfolio Parivash
+		meta(name="viewport", content="width=device-widt,initial-scale=1.0")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css")
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet")
+		link(href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css", rel="stylesheet")
+		link(rel="stylesheet", href="css/main.css")
+	body
+		nav.color
+			.container
+				.nav-wrapper
+					a(href="#").brand-logo.leftbtn.btn-floating.cyan.pulse.logo_nav.valign-wrapper
+						img.log(src="img/logos/mylogo.png")
+					a.button-collapse.right(href="#", data-activates="mobile-demo")
+						i.material-icons menu
+					ul.right.hide-on-med-and-down
+						li
+							a.menu(href="#") Presentación
+						li
+							a.menu(href="#") Proyectos
+						li
+							a.menu(href="#") Habilidades
+						li
+							a.menu(href="#") + Proyectos
+						li
+							a.menu(href="#") Contacto
+					ul#mobile-demo.side-nav
+						li
+							a.menu(href="#") Presentación
+						li
+							a.menu(href="#") + Proyectos
+						li
+							a.menu(href="#") Habilidades
+						li
+							a.menu(href="#") Otros proyectos
+						li
+							a.menu(href="#") Contacto
+		.container#presentacion
+			.row
+				.col.l12.m12.s12
+					img.center-align.logo(src="img/nombre_logo.png")
+			.row
+				.col.l12.m12.s12
+					p.center-align Soy Front-end Developer y Licenciada en Diseño Gráfico. Me inspira mucho ser parte de la evolución de la comunicación gráfica a través de la tecnología. Me interesa desarrollarme en el área de UX y UI pues me permite combinar mis conocimientos y habilidades para crear soluciones integrales pensadas en las necesidades del usuario. Soy fan del trabajo en equipo, ya que creo que la diversidad de talentos enfocados en un mismo objetivo logran resultados asombrosos. He trabajado bajo la metodología Agile.
+		section#proyectos
+			.row
+				img.titulo(src="img/titulo_proyectos.png")
+		.container-fluid.bgr
+			.container
+				.row.center-align
+					.col.l6.m6.s12
+						.card.margin_card
+							.card-image.waves-effect.waves-block.waves-light
+								img.activator(src="img/proyectos/applove.png")
+							.card-content
+								span.card-title.activator.grey-text.text-darken-4 Card Title
+									i.material-icons.right more_vert
+								p
+									a(href="#") This is a link
+							.card-reveal
+								span.card-title.grey-text.text-darken-4 Card Title
+									i.material-icons.right close
+								p Here is some more information about this product that is only revealed once clicked on.
+					.col.l6.m6.s12
+						.card.margin_card
+							.card-image.waves-effect.waves-block.waves-light
+								img.activator(src="img/proyectos/applove.png")
+							.card-content
+								span.card-title.activator.grey-text.text-darken-4 Card Title
+									i.material-icons.right more_vert
+								p
+									a(href="#") This is a link
+							.card-reveal
+								span.card-title.grey-text.text-darken-4 Card Title
+									i.material-icons.right close
+								p Here is some more information about this product that is only revealed once clicked on.
+				.row
+					.col.l6.m6.s12
+						.card.margin_card
+							.card-image.waves-effect.waves-block.waves-light
+								img.activator(src="img/proyectos/applove.png")
+							.card-content
+								span.card-title.activator.grey-text.text-darken-4 Card Title
+									i.material-icons.right more_vert
+								p
+									a(href="#") This is a link
+							.card-reveal
+								span.card-title.grey-text.text-darken-4 Card Title
+									i.material-icons.right close
+								p Here is some more information about this product that is only revealed once clicked on.
+					.col.l6.m6.s12
+						.card.margin_card
+							.card-image.waves-effect.waves-block.waves-light
+								img.activator(src="img/proyectos/applove.png")
+							.card-content
+								span.card-title.activator.grey-text.text-darken-4 Card Title
+									i.material-icons.right more_vert
+								p
+									a(href="#") This is a link
+							.card-reveal
+								span.card-title.grey-text.text-darken-4 Card Title
+									i.material-icons.right close
+								p Here is some more information about this product that is only revealed once clicked on.
+		section#habilidades
+			.row
+				img.titulo(src="img/titulo_habilidades.png")
+		.container
+			.row
+				mixin habilidad(imagen,titulo,descripcion)
+					.col.l4.m4.s6
+						img.img_habilidad.center-align(src="img/logos/#{imagen}.png")
+						h5.center-align #{titulo}
+						p.center-align #{descripcion}
+				+habilidad("languages_trioGris", "Desarrollo Web", "HTML5: Avanzado . CSS3: Intermedio . JavaScript ES6: Intermedio")
+				+habilidad("frameworksGris","Diseño responsivo","Uso de Frameworks: Bootstrap y Materialize")
+				+habilidad("githubGris","Preprocesador de HTML y Github","PUG con Mixins, Uso de GitHub colaborativo")
+				+habilidad("windows-macGris","Experiencia en plataformas","Mac y Windows")
+				+habilidad("Adobegris","Software de Diseño","Photoshop . Illustrator . InDesign")
+				+habilidad("InglesGris","Idiomas","Español: Nativo . Inglés: Intermedio . Portugués: Básico")
+		.footer.page-footer.color#contacto
+			.container
+				.row
+					.col.l6.s12
+						h5.white-text Contáctame
+						p.grey-text.text-lighten-4 Me encantará participar en tus proyectos
+					.col.l4.offset-l2.s12
+						h5.white-text Links
+						ul
+							li
+								a.grey-text.text-lighten-3(href="#") Móvil 4423717820
+									img.icono_contacto(src="img/logos/celGris.png")
+							li
+								a.grey-text.text-lighten-3(href="#") E-mail
+									img.icono_contacto(src="img/logos/mailGris.png")
+							li
+								a.grey-text.text-lighten-3(href="#!") Link 3
+			.footer-copyright
+				.container
+					p © Parivash Gutiérrez 2017
+					a.grey-text.text-lighten-4.right(href="#!") More Links
+	script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js")
+	script(src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js")
+	script(src="js/main.js")
