@@ -10,61 +10,60 @@ html(lang="es")
 		link(href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css", rel="stylesheet")
 		link(rel="stylesheet", href="css/main.css")
 	body
-		nav.color
+		nav.color.z#inicio
 			.container
 				.nav-wrapper
-					a(href="#").brand-logo.leftbtn.btn-floating.cyan.pulse.logo_nav.valign-wrapper
+					a(href="#").brand-logo.logo_nav.valign-wrapper
 						img.log(src="img/logos/mylogo.png")
 					a.button-collapse.right(href="#", data-activates="mobile-demo")
 						i.material-icons menu
 					ul.right.hide-on-med-and-down
 						li
-							a.menu(href="#") Presentación
+							a.menu(href="#presentacion") Presentación
 						li
-							a.menu(href="#") Proyectos
+							a.menu(href="#proyectos") Proyectos
 						li
-							a.menu(href="#") Habilidades
+							a.menu(href="#habilidades") Habilidades
 						li
-							a.menu(href="#") + Proyectos
-						li
-							a.menu(href="#") Contacto
+							a.menu(href="#contacto") Contacto
 					ul#mobile-demo.side-nav
 						li
-							a.menu(href="#") Presentación
+							a.menu(href="#presentacion") Presentación
 						li
-							a.menu(href="#") + Proyectos
+							a.menu(href="#proyectos") Proyectos
 						li
-							a.menu(href="#") Habilidades
+							a.menu(href="#habilidades") Habilidades
 						li
-							a.menu(href="#") Otros proyectos
-						li
-							a.menu(href="#") Contacto
+							a.menu(href="#contacto") Contacto
 		.container#presentacion
 			.row
 				.col.l12.m12.s12
-					img.center-align.logo(src="img/nombre_logo.png")
+					img.center-align.logo.pulse(src="img/nombre_logo.png")
 			.row
 				.col.l12.m12.s12
 					p.center-align Soy Front-end Developer y Licenciada en Diseño Gráfico. Me inspira mucho ser parte de la evolución de la comunicación gráfica a través de la tecnología. Me interesa desarrollarme en el área de UX y UI pues me permite combinar mis conocimientos y habilidades para crear soluciones integrales pensadas en las necesidades del usuario. Soy fan del trabajo en equipo, ya que creo que la diversidad de talentos enfocados en un mismo objetivo logran resultados asombrosos. He trabajado bajo la metodología Agile.
 		section#proyectos
 			.row
-				img.titulo(src="img/titulo_proyectos.png")
+				img.titulo.pulse(src="img/titulo_proyectos.png")
+				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
+					i.material-icons arrow_upward
 		.container-fluid.bgr
 			.container
 				.row.center-align
 					.col.l6.m6.s12
 						.card.margin_card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="img/proyectos/applove.png")
+								img.activator(src="img/triangle.png")
 							.card-content
-								span.card-title.activator.grey-text.text-darken-4 Card Title
+								span.card-title.activator.grey-text.text-darken-4 Triangle Template
 									i.material-icons.right more_vert
 								p
-									a(href="#") This is a link
+									a(href="https://parigutierrez.github.io/triangle_template/public/home" target="_blank") Ir al sitio
 							.card-reveal
-								span.card-title.grey-text.text-darken-4 Card Title
+								span.card-title.grey-text.text-darken-4 Descripción
 									i.material-icons.right close
-								p Here is some more information about this product that is only revealed once clicked on.
+								p Proyecto de Prototyping utilizando preprocesador de HTML PUG, mixins y SASS
+								a(href="https://github.com/parigutierrez/triangle_template" target="_blank") Ir al repositorio
 					.col.l6.m6.s12
 						.card.margin_card
 							.card-image.waves-effect.waves-block.waves-light
@@ -107,7 +106,9 @@ html(lang="es")
 								p Here is some more information about this product that is only revealed once clicked on.
 		section#habilidades
 			.row
-				img.titulo(src="img/titulo_habilidades.png")
+				img.titulo.pulse(src="img/titulo_habilidades.png")
+				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
+					i.material-icons arrow_upward
 		.container
 			.row
 				mixin habilidad(imagen,titulo,descripcion)
@@ -121,6 +122,23 @@ html(lang="es")
 				+habilidad("windows-macGris","Experiencia en plataformas","Mac y Windows")
 				+habilidad("Adobegris","Software de Diseño","Photoshop . Illustrator . InDesign")
 				+habilidad("InglesGris","Idiomas","Español: Nativo . Inglés: Intermedio . Portugués: Básico")
+		.container
+			ul.collapsible(data-collapsible="accordion")
+				li
+					.collapsible-header First
+						i.material-icons filter_drama
+					.collapsible-body
+						span Lorem ipsum dolor sit amet.
+				li
+					.collapsible-header Second
+						i.material-icons place
+					.collapsible-body
+						span Lorem ipsum dolor sit amet.
+				li
+					.collapsible-header Third
+						i.material-icons whatshot
+					.collapsible-body
+						span Lorem ipsum dolor sit amet.
 		.footer.page-footer.color#contacto
 			.container
 				.row
@@ -140,8 +158,7 @@ html(lang="es")
 								a.grey-text.text-lighten-3(href="#!") Link 3
 			.footer-copyright
 				.container
-					p © Parivash Gutiérrez 2017
-					a.grey-text.text-lighten-4.right(href="#!") More Links
+					p.grey-text.text-lighten-4.center-align(href="#!") © Parivash Gutiérrez 2017
 	script(src="https://code.jquery.com/jquery-3.2.1.min.js")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js")
 	script(src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js")

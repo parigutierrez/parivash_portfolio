@@ -1,4 +1,4 @@
-## Proyecto Portafolio profesional Parivash Gutiérrez
+# Proyecto Portafolio profesional Parivash Gutiérrez
 
 Incluye:
 
@@ -8,4 +8,4 @@ Incluye:
 - Habilidades
 
 ```
-# Realizdo con PUG y SASS
+##Realizdo con PUG y SASS
