@@ -26,7 +26,7 @@ html(lang="es")
 							a.menu(href="#habilidades") Habilidades
 						li
 							a.menu(href="#contacto") Contacto
-					ul#mobile-demo.side-nav
+					ul#mobile-demo.side-nav.colormnu
 						li
 							a.menu(href="#presentacion") Presentación
 						li
@@ -120,25 +120,8 @@ html(lang="es")
 				+habilidad("frameworksGris","Diseño responsivo","Uso de Frameworks: Bootstrap y Materialize")
 				+habilidad("githubGris","Preprocesador de HTML y Github","PUG con Mixins, Uso de GitHub colaborativo")
 				+habilidad("windows-macGris","Experiencia en plataformas","Mac y Windows")
-				+habilidad("Adobegris","Software de Diseño","Photoshop . Illustrator . InDesign")
-				+habilidad("InglesGris","Idiomas","Español: Nativo . Inglés: Intermedio . Portugués: Básico")
-		.container
-			ul.collapsible(data-collapsible="accordion")
-				li
-					.collapsible-header First
-						i.material-icons filter_drama
-					.collapsible-body
-						span Lorem ipsum dolor sit amet.
-				li
-					.collapsible-header Second
-						i.material-icons place
-					.collapsible-body
-						span Lorem ipsum dolor sit amet.
-				li
-					.collapsible-header Third
-						i.material-icons whatshot
-					.collapsible-body
-						span Lorem ipsum dolor sit amet.
+				+habilidad("AdobeGriss","Software de Diseño","Photoshop . Illustrator . InDesign")
+				+habilidad("InglesGriss","Idiomas","Español: Nativo . Inglés: Intermedio . Portugués: Básico")
 		.footer.page-footer.color#contacto
 			.container
 				.row
@@ -149,13 +132,23 @@ html(lang="es")
 						h5.white-text Links
 						ul
 							li
-								a.grey-text.text-lighten-3(href="#") Móvil 4423717820
+								a.grey-text.text-lighten-3(title="Llamar ahora" href="tel:4423717820") Móvil 4423717820
 									img.icono_contacto(src="img/logos/celGris.png")
 							li
-								a.grey-text.text-lighten-3(href="#") E-mail
+								a.grey-text.text-lighten-3(title="Enviar Mail" href="mailto:parivash.gutierrez@gmail.com") E-mail
 									img.icono_contacto(src="img/logos/mailGris.png")
 							li
-								a.grey-text.text-lighten-3(href="#!") Link 3
+								a.grey-text.text-lighten-3(href="https://www.linkedin.com/in/parivash-guti%C3%A9rrez-0a769b45/" target="_blank") LinkedIn
+									img.icono_contacto(src="img/logos/linkedin-circleGris.png")
+							li
+								a.grey-text.text-lighten-3(title="Ir a GitHub" href="https://github.com/parigutierrez" target="_blank") GitHub
+									img.icono_contacto(src="img/logos/github-Gris.png")
+							li
+								a.grey-text.text-lighten-3(title="Ver proyectos de Diseño y Fotografía" href="https://www.behance.net/Parivash" target="_blank") Behance
+									img.icono_contacto(src="img/logos/behanceGris.png")
+							li
+								a.grey-text.text-lighten-3(href="img/CV_Parivash_Gutierrez2.pdf" download="Parivash_Gutiérrez_CV") Descarga mi CV
+									img.icono_contacto(src="img/logos/pdf-flatGris.png")
 			.footer-copyright
 				.container
 					p.grey-text.text-lighten-4.center-align(href="#!") © Parivash Gutiérrez 2017
