@@ -57,6 +57,17 @@ p{
 	p{
 		font-size: 14px;
 	}
+	.img_habilidad{
+		padding:0px;
+}
+	#habilidades{
+		display:none;
+	}
+}
+@media only screen and (min-width: 701px){
+	#habilidades2{
+		display:none;
+	}
 }
 
 @keyframes pulse_animation {
@@ -98,8 +109,7 @@ p{
 
 .img_habilidad{
 	width: 100%;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding:20px;
 }
 .icono_contacto{
 	width: 32px;

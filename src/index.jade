@@ -23,7 +23,7 @@ html(lang="es")
 						li
 							a.menu(href="#proyectos") Proyectos
 						li
-							a.menu(href="#habilidades") Habilidades
+							a.menu(href="#habilidades-titulo") Habilidades
 						li
 							a.menu(href="#contacto") Contacto
 					ul#mobile-demo.side-nav.colormnu
@@ -126,23 +126,34 @@ html(lang="es")
 			.row
 				+personales("Identidad corporativa","actopanCard","Realización de diversos diseños de marca y publicidad","https://www.behance.net/gallery/33284185/Identidad-corporativa")
 				+personales("Fotografía","piecitos","Retratos, paisaje, producto y restauración fotográfica","https://www.behance.net/gallery/33395535/Fotografia-Momentos")
-		section#habilidades
+		section#habilidades-titulo
 			.row
 				img.titulo.pulse(src="img/titulo_habilidades.png")
 				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
 					i.material-icons arrow_upward
-		.container
-			.row
 				mixin habilidad(imagen,titulo,descripcion)
 					.col.l4.m4.s6
 						img.img_habilidad.center-align(src="img/logos/#{imagen}.png")
 						h5.center-align #{titulo}
 						p.center-align #{descripcion}
+		.container#habilidades
+			.row
 				+habilidad("languages_trioGris", "Desarrollo Web", "HTML5: Avanzado . CSS3: Intermedio . JavaScript ES6: Intermedio")
 				+habilidad("frameworksGris","Diseño responsivo","Uso de Frameworks: Bootstrap y Materialize")
 				+habilidad("githubGris","PUG y Github","PUG con Mixins, Uso de GitHub colaborativo")
+			.row
 				+habilidad("windows-macGris","Experiencia en plataformas","Mac y Windows")
-				+habilidad("AdobeGriss","Software de Diseño","Illustrator . Photoshop  . InDesign")
+				+habilidad("AdobeGris","Software de Diseño","Illustrator . Photoshop  . InDesign")
+				+habilidad("inglesGriss","Idiomas","Español: Nativo . Inglés: Intermedio . Portugués: Básico")
+		.container#habilidades2
+			.row
+				+habilidad("languages_trioGris", "Desarrollo Web", "HTML5: Avanzado . CSS3: Intermedio . JavaScript ES6: Intermedio")
+				+habilidad("frameworksGris","Diseño responsivo","Uso de Frameworks: Bootstrap y Materialize")
+			.row
+				+habilidad("githubGris","PUG y Github","PUG con Mixins, Uso de GitHub colaborativo")
+				+habilidad("windows-macGris","Experiencia en plataformas","Mac y Windows")
+			.row
+				+habilidad("AdobeGris","Software de Diseño","Illustrator . Photoshop  . InDesign")
 				+habilidad("inglesGriss","Idiomas","Español: Nativo . Inglés: Intermedio . Portugués: Básico")
 		.footer.page-footer.color#contacto
 			.container
