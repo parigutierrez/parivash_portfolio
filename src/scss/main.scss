@@ -59,11 +59,12 @@ p{
 	}
 	.img_habilidad{
 		padding:0px;
-}
+	}
 	#habilidades{
 		display:none;
 	}
 }
+
 @media only screen and (min-width: 701px){
 	#habilidades2{
 		display:none;
@@ -87,7 +88,9 @@ p{
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
-
+.clear-gray{
+	background-color: #EEE;
+}
 .bgr{
 	background-color: #5BD2D8;
 	padding-top: 1rem;
@@ -97,13 +100,18 @@ p{
 	color:#00628F;
 }
 .margin_card{
-	margin:24px;
+	margin-top:12px;
+	margin-bottom:12px;
+	margin-left:24px;
+	margin-right:24px;
 }
 .titulo{
 	width: 22%;
+	margin-left: 3rem;
 }
 .tituloL{
 	width: 35%;
+	margin-left: 3rem;
 }
 .transi{
 	width:483px;
@@ -124,6 +132,11 @@ p{
 .icono_contacto{
 	width: 32px;
 	margin-top: 6px;
+}
+.icono_contacto:hover{
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(56,55,56,1);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(56,55,56,1);
+	box-shadow: 3px 3px 5px 0px rgba(56,55,56,1);
 }
 .float{
 	float: right;
