@@ -23,6 +23,8 @@ html(lang="es")
 						li
 							a.menu(href="#proyectos") Proyectos
 						li
+							a.menu(href="#personales") Proyectos de Diseño
+						li
 							a.menu(href="#habilidades-titulo") Habilidades
 						li
 							a.menu(href="#contacto") Contacto
@@ -31,6 +33,8 @@ html(lang="es")
 							a.menu(href="#inicio") Presentación
 						li
 							a.menu(href="#proyectos") Proyectos
+						li
+							a.menu(href="#personales") Proyectos de Diseño
 						li
 							a.menu(href="#habilidades") Habilidades
 						li
@@ -43,26 +47,26 @@ html(lang="es")
 					.row
 						img.center-align.logo.pulse(src="img/logo_principal.png")
 						p.center-align Soy Front-end Developer y Licenciada en Diseño Gráfico. Me inspira mucho ser parte de la evolución de la comunicación gráfica a través de la tecnología. Me interesa desarrollarme en el área de UX/UI pues me permite combinar mis conocimientos y habilidades para crear soluciones integrales pensadas en las necesidades del usuario. Soy fan del trabajo en equipo, ya que creo que la diversidad de talentos enfocados en un mismo objetivo logran resultados asombrosos. He trabajado bajo la metodología Agile.
-		section
+
+		.container-fluid.bgr#proyectos
 			.row
 				img.titulo.pulse(src="img/titulo_proyectos.png")
 				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
 					i.material-icons arrow_upward
-		.container-fluid.bgr
-			.container#proyectos
+			.container.margn-top
 				.row.center-align
 					.col.l6.m6.s12
 						.card.margin_card
 							.card-image.waves-effect.waves-block.waves-light
 								img.activator(src="img/proyectos/triangleCard.png")
 							.card-content
-								span.card-title.activator.grey-text.text-darken-4 Triangle Template
+								span.card-title.activator.center-align Triangle Template
 									i.material-icons.right more_vert
 							.card-reveal
-								span.card-title.grey-text.text-darken-4 Descripción
+								span.card-title.grey-text.center-align Prototyping
 									i.material-icons.right close
-								p Proyecto de Prototyping utilizando preprocesador de HTML PUG, mixins y SASS
-								a(href="https://github.com/parigutierrez/triangle_template" target="_blank") Ver código </>
+								p Combinando preprocesador de HTML; PUG, mixins y SASS, diseño responsivo
+								a(href="https://github.com/parigutierrez/triangle_template" target="_blank") Ver código
 								.row
 									a(href="https://parigutierrez.github.io/triangle_template/public/home" target="_blank") Ir al sitio
 					.col.l6.m6.s12
@@ -70,28 +74,28 @@ html(lang="es")
 							.card-image.waves-effect.waves-block.waves-light
 								img.activator(src="img/proyectos/experimentaCard.png")
 							.card-content
-								span.card-title.activator.grey-text.text-darken-4 Socios Experimenta
+								span.card-title.activator.center-align Socios Experimenta
 									i.material-icons.right more_vert
 							.card-reveal
-								span.card-title.grey-text.text-darken-4 HTML5, CSS3
+								span.card-title.grey-text Flujo de la aplicación
 									i.material-icons.right close
-								p Proyecto colaborativo, Sección de socios de empresa Experimenta
-								a(href="https://github.com/parigutierrez/socios_experimenta" target="_blank") Ver código </>
+								p Sección de socios para Experimenta,Framework uikit, Proyecto colaborativo
+								a(href="https://github.com/parigutierrez/socios_experimenta" target="_blank") Ver código
 								.row
 									a(href="https://parigutierrez.github.io/socios_experimenta/" target="_blank") Ir al sitio
-				.row
+				.row.center-align
 					.col.l6.m6.s12
 						.card.margin_card
 							.card-image.waves-effect.waves-block.waves-light
 								img.activator(src="img/proyectos/apploveCard1.png")
 							.card-content
-								span.card-title.activator.grey-text.text-darken-4 Applove
+								span.card-title.activator.center-align Applove
 									i.material-icons.right more_vert
 							.card-reveal
-								span.card-title.grey-text.text-darken-4 Card Title
+								span.card-title.grey-text Maquetación y estilos, con modales
 									i.material-icons.right close
-								p Maquetación y estilos HTML CSS3
-								a(href="https://parigutierrez.github.io/Applove2-con-Grid" target="_blank") Ver código </>
+								p Uso de HTML5, CSS3 y Modales con Javascript
+								a.center(href="https://parigutierrez.github.io/Applove2-con-Grid" target="_blank") Ver código
 								.row
 									a(href="https://github.com/parigutierrez/Applove2-con-Grid/" target="_blank") Ir al sitio
 					.col.l6.m6.s12
@@ -99,16 +103,20 @@ html(lang="es")
 							.card-image.waves-effect.waves-block.waves-light
 								img.activator(src="img/proyectos/GoogleCard.png")
 							.card-content
-								span.card-title.activator.grey-text.text-darken-4 Google Design
+								span.card-title.activator.center-align Google Design
 									i.material-icons.right more_vert
 							.card-reveal
-								span.card-title.grey-text.text-darken-4 Card Title
+								span.card-title.grey-text Prototyping con Grid
 									i.material-icons.right close
-								p Here is some more information about this product that is only revealed once clicked on.
-								a(href="https://github.com/parigutierrez/designGoogle" target="_blank") Ver código </>
+								p Maquetación y estilos utilizando la Grid
+								a.center(href="https://github.com/parigutierrez/designGoogle" target="_blank") Ver código
 								.row
-									a(href="https://github.com/parigutierrez/designGoogle/" target="_blank") Ir al sitio
-		.container-fluid.gray-bg
+									a(href="https://parigutierrez.github.io/designGoogle/index.html" target="_blank") Ir al sitio
+		.container-fluid.gray-bg#personales
+			.row
+				img.tituloL.pulse(src="img/titulo_diseño.png")
+				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
+					i.material-icons arrow_upward
 			.container
 				.row
 					mixin personales(titulo,imagen,descripcion,link)

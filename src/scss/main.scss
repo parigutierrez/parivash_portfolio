@@ -37,7 +37,7 @@ nav{
 p{
 	margin-top:-5px;
 	color:#016390;
-	font-size: 17px;
+	font-size: 18px;
 	padding-left: 7px;
 	padding-right: 7px;
 }
@@ -89,13 +89,21 @@ p{
 }
 
 .bgr{
-	background-color: #38BBC9;
+	background-color: #5BD2D8;
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+}
+.card .card-title.activator{
+	color:#00628F;
 }
 .margin_card{
-	margin:30px;
+	margin:24px;
 }
 .titulo{
-	width: 25%;
+	width: 22%;
+}
+.tituloL{
+	width: 35%;
 }
 .transi{
 	width:483px;
@@ -125,7 +133,12 @@ p{
 	padding-left: 3%;
 }
 .gray-bg{
-	background-color:#E6E3E7;
+	background-color:#EEE;
+	margin-top: -2rem;
+	padding-top: 1rem;
+}
+.margn-top{
+	margin-top: -1rem;
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
 	color:cyan;
