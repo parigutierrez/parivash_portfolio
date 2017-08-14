@@ -106,7 +106,9 @@ p{
 .row .col{
 	padding: 0rem;
 }
-
+.paddng{
+	margin: 1rem;
+}
 .img_habilidad{
 	width: 100%;
 	padding:20px;
@@ -121,6 +123,14 @@ p{
 }
 .padd{
 	padding-left: 3%;
+}
+.gray-bg{
+	background-color:#E6E3E7;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+	color:cyan;
+	text-transform: none;
+	font-size: 16px;
 }
 h5{
 	color:#00628F;
