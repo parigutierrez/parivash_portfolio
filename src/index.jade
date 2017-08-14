@@ -13,13 +13,13 @@ html(lang="es")
 		nav.color.z#inicio
 			.container
 				.nav-wrapper
-					a(href="#").brand-logo.logo_nav.valign-wrapper
+					a#loguito(href="#").brand-logo.logo_nav.valign-wrapper
 						img.log(src="img/logos/mylogo.png")
 					a.button-collapse.right(href="#", data-activates="mobile-demo")
 						i.material-icons menu
 					ul.right.hide-on-med-and-down
 						li
-							a.menu(href="#presentacion") Presentación
+							a.menu(href="#inicio") Presentación
 						li
 							a.menu(href="#proyectos") Proyectos
 						li
@@ -28,7 +28,7 @@ html(lang="es")
 							a.menu(href="#contacto") Contacto
 					ul#mobile-demo.side-nav.colormnu
 						li
-							a.menu(href="#presentacion") Presentación
+							a.menu(href="#inicio") Presentación
 						li
 							a.menu(href="#proyectos") Proyectos
 						li
@@ -37,73 +37,95 @@ html(lang="es")
 							a.menu(href="#contacto") Contacto
 		.container#presentacion
 			.row
-				.col.l12.m12.s12
-					img.center-align.logo.pulse(src="img/nombre_logo.png")
-			.row
-				.col.l12.m12.s12
-					p.center-align Soy Front-end Developer y Licenciada en Diseño Gráfico. Me inspira mucho ser parte de la evolución de la comunicación gráfica a través de la tecnología. Me interesa desarrollarme en el área de UX y UI pues me permite combinar mis conocimientos y habilidades para crear soluciones integrales pensadas en las necesidades del usuario. Soy fan del trabajo en equipo, ya que creo que la diversidad de talentos enfocados en un mismo objetivo logran resultados asombrosos. He trabajado bajo la metodología Agile.
-		section#proyectos
+				.col.m4.s12
+					img.foto(src="img/foto-marco.png")
+				.col.m8.s12
+					.row
+						img.center-align.logo.pulse(src="img/logo_principal.png")
+						p.center-align Soy Front-end Developer y Licenciada en Diseño Gráfico. Me inspira mucho ser parte de la evolución de la comunicación gráfica a través de la tecnología. Me interesa desarrollarme en el área de UX/UI pues me permite combinar mis conocimientos y habilidades para crear soluciones integrales pensadas en las necesidades del usuario. Soy fan del trabajo en equipo, ya que creo que la diversidad de talentos enfocados en un mismo objetivo logran resultados asombrosos. He trabajado bajo la metodología Agile.
+		section
 			.row
 				img.titulo.pulse(src="img/titulo_proyectos.png")
 				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
 					i.material-icons arrow_upward
 		.container-fluid.bgr
-			.container
+			.container#proyectos
 				.row.center-align
 					.col.l6.m6.s12
 						.card.margin_card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="img/triangle.png")
+								img.activator(src="img/proyectos/triangleCard.png")
 							.card-content
 								span.card-title.activator.grey-text.text-darken-4 Triangle Template
 									i.material-icons.right more_vert
-								p
-									a(href="https://parigutierrez.github.io/triangle_template/public/home" target="_blank") Ir al sitio
 							.card-reveal
 								span.card-title.grey-text.text-darken-4 Descripción
 									i.material-icons.right close
 								p Proyecto de Prototyping utilizando preprocesador de HTML PUG, mixins y SASS
-								a(href="https://github.com/parigutierrez/triangle_template" target="_blank") Ir al repositorio
+								a(href="https://github.com/parigutierrez/triangle_template" target="_blank") Ver código </>
+								.row
+									a(href="https://parigutierrez.github.io/triangle_template/public/home" target="_blank") Ir al sitio
 					.col.l6.m6.s12
 						.card.margin_card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="img/proyectos/applove.png")
+								img.activator(src="img/proyectos/experimentaCard.png")
 							.card-content
-								span.card-title.activator.grey-text.text-darken-4 Card Title
+								span.card-title.activator.grey-text.text-darken-4 Socios Experimenta
 									i.material-icons.right more_vert
-								p
-									a(href="#") This is a link
 							.card-reveal
-								span.card-title.grey-text.text-darken-4 Card Title
+								span.card-title.grey-text.text-darken-4 HTML5, CSS3
 									i.material-icons.right close
-								p Here is some more information about this product that is only revealed once clicked on.
+								p Proyecto colaborativo, Sección de socios de empresa Experimenta
+								a(href="https://github.com/parigutierrez/socios_experimenta" target="_blank") Ver código </>
+								.row
+									a(href="https://parigutierrez.github.io/socios_experimenta/" target="_blank") Ir al sitio
 				.row
 					.col.l6.m6.s12
 						.card.margin_card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="img/proyectos/applove.png")
+								img.activator(src="img/proyectos/apploveCard.png")
 							.card-content
-								span.card-title.activator.grey-text.text-darken-4 Card Title
+								span.card-title.activator.grey-text.text-darken-4 Applove
 									i.material-icons.right more_vert
-								p
-									a(href="#") This is a link
 							.card-reveal
 								span.card-title.grey-text.text-darken-4 Card Title
 									i.material-icons.right close
-								p Here is some more information about this product that is only revealed once clicked on.
+								p Maquetación y estilos HTML CSS3
+								a(href="https://parigutierrez.github.io/Applove2-con-Grid" target="_blank") Ver código </>
+								.row
+									a(href="https://github.com/parigutierrez/Applove2-con-Grid/" target="_blank") Ir al sitio
 					.col.l6.m6.s12
 						.card.margin_card
 							.card-image.waves-effect.waves-block.waves-light
-								img.activator(src="img/proyectos/applove.png")
+								img.activator(src="img/proyectos/GoogleCard.png")
 							.card-content
-								span.card-title.activator.grey-text.text-darken-4 Card Title
+								span.card-title.activator.grey-text.text-darken-4 Google Design
 									i.material-icons.right more_vert
-								p
-									a(href="#") This is a link
 							.card-reveal
 								span.card-title.grey-text.text-darken-4 Card Title
 									i.material-icons.right close
 								p Here is some more information about this product that is only revealed once clicked on.
+								a(href="https://github.com/parigutierrez/designGoogle" target="_blank") Ver código </>
+								.row
+									a(href="https://github.com/parigutierrez/designGoogle/" target="_blank") Ir al sitio
+		.container
+			.row
+				mixin personales(titulo,imagen,descripcion,link)
+					.col.s12.m6
+						h5.header.center-align #{titulo}
+							.card.horizontal.small
+								.card-image
+									img(src="img/proyectos/#{imagen}.png")
+								.card-stacked
+									.card-content
+										p #{descripcion}
+									.card-action
+										a(href="#{link}" target="_blank") Ir al sitio
+				+personales("Imagen para centraldegas.com","centralGasC","colaboración con elementos gráficos para sitio web de Central de Gas","http://www.centraldegas.com/")
+				+personales("Trabajo en sitio web de MedicosPro","medicospro","Imagen de marca de sitio web MedicosPro - Software","https://medicospro.com/es/")
+			.row
+				+personales("Identidad corporativa","actopanCard","Realización de diversos diseños de marca y publicidad","https://www.behance.net/gallery/33284185/Identidad-corporativa")
+				+personales("Fotografía","piecitos","Retratos, paisaje, producto y restauración fotográfica","https://www.behance.net/gallery/33395535/Fotografia-Momentos")
 		section#habilidades
 			.row
 				img.titulo.pulse(src="img/titulo_habilidades.png")
@@ -120,7 +142,7 @@ html(lang="es")
 				+habilidad("frameworksGris","Diseño responsivo","Uso de Frameworks: Bootstrap y Materialize")
 				+habilidad("githubGris","Preprocesador de HTML y Github","PUG con Mixins, Uso de GitHub colaborativo")
 				+habilidad("windows-macGris","Experiencia en plataformas","Mac y Windows")
-				+habilidad("AdobeGriss","Software de Diseño","Photoshop . Illustrator . InDesign")
+				+habilidad("AdobeGriss","Software de Diseño","Illustrator . Photoshop  . InDesign")
 				+habilidad("inglesGriss","Idiomas","Español: Nativo . Inglés: Intermedio . Portugués: Básico")
 		.footer.page-footer.color#contacto
 			.container
@@ -129,26 +151,18 @@ html(lang="es")
 						h5.white-text Contáctame
 						p.grey-text.text-lighten-4 Me encantará participar en tus proyectos
 					.col.l4.offset-l2.s12
-						h5.white-text Links
-						ul
-							li
-								a.grey-text.text-lighten-3(title="Llamar ahora" href="tel:4423717820") Móvil 4423717820
-									img.icono_contacto(src="img/logos/celGris.png")
-							li
-								a.grey-text.text-lighten-3(title="Enviar Mail" href="mailto:parivash.gutierrez@gmail.com") E-mail
-									img.icono_contacto(src="img/logos/mailGris.png")
-							li
-								a.grey-text.text-lighten-3(href="https://www.linkedin.com/in/parivash-guti%C3%A9rrez-0a769b45/" target="_blank") LinkedIn
-									img.icono_contacto(src="img/logos/linkedin-circleGris.png")
-							li
-								a.grey-text.text-lighten-3(title="Ir a GitHub" href="https://github.com/parigutierrez" target="_blank") GitHub
-									img.icono_contacto(src="img/logos/github-Gris.png")
-							li
-								a.grey-text.text-lighten-3(title="Ver proyectos de Diseño y Fotografía" href="https://www.behance.net/Parivash" target="_blank") Behance
-									img.icono_contacto(src="img/logos/behanceGris.png")
-							li
-								a.grey-text.text-lighten-3(href="img/CV_Parivash_Gutierrez2.pdf" download="Parivash_Gutiérrez_CV") Descarga mi CV
-									img.icono_contacto(src="img/logos/pdf-flatGris.png")
+						a.padd.grey-text.text-lighten-3(title="Llamar ahora" href="tel:4423717820")
+							img.icono_contacto(src="img/logos/celGris.png")
+						a.padd.grey-text.text-lighten-3(title="Enviar Mail" href="mailto:parivash.gutierrez@gmail.com")
+							img.icono_contacto(src="img/logos/mailGris.png")
+						a.padd.grey-text.text-lighten-3(title="Ver perfil" href="https://www.linkedin.com/in/parivash-guti%C3%A9rrez-0a769b45/" target="_blank")
+							img.icono_contacto(src="img/logos/linkedin-circleGris.png")
+						a.padd.grey-text.text-lighten-3(title="Ir a GitHub" href="https://github.com/parigutierrez" target="_blank")
+							img.icono_contacto(src="img/logos/github-Gris.png")
+						a.padd.grey-text.text-lighten-3(title="Ver proyectos de Diseño y Fotografía" href="https://www.behance.net/Parivash" target="_blank")
+							img.icono_contacto(src="img/logos/behanceGris.png")
+						a.padd.grey-text.text-lighten-3(title="Descargar CV" href="img/CV_Parivash_Gutierrez2.pdf" download="Parivash_Gutiérrez_CV")
+							img.icono_contacto(src="img/logos/pdf-flatGris.png")
 			.footer-copyright
 				.container
 					p.grey-text.text-lighten-4.center-align(href="#!") © Parivash Gutiérrez 2017

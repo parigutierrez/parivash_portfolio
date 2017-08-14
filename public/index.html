@@ -13,15 +13,15 @@
   <body>
     <nav id="inicio" class="color z">
       <div class="container">
-        <div class="nav-wrapper"><a href="#" class="brand-logo logo_nav valign-wrapper"><img src="img/logos/mylogo.png" class="log"></a><a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper"><a id="loguito" href="#" class="brand-logo logo_nav valign-wrapper"><img src="img/logos/mylogo.png" class="log"></a><a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#presentacion" class="menu">Presentación</a></li>
+            <li><a href="#inicio" class="menu">Presentación</a></li>
             <li><a href="#proyectos" class="menu">Proyectos</a></li>
             <li><a href="#habilidades" class="menu">Habilidades</a></li>
             <li><a href="#contacto" class="menu">Contacto</a></li>
           </ul>
           <ul id="mobile-demo" class="side-nav colormnu">
-            <li><a href="#presentacion" class="menu">Presentación</a></li>
+            <li><a href="#inicio" class="menu">Presentación</a></li>
             <li><a href="#proyectos" class="menu">Proyectos</a></li>
             <li><a href="#habilidades" class="menu">Habilidades</a></li>
             <li><a href="#contacto" class="menu">Contacto</a></li>
@@ -31,39 +31,37 @@
     </nav>
     <div id="presentacion" class="container">
       <div class="row">
-        <div class="col l12 m12 s12"><img src="img/nombre_logo.png" class="center-align logo pulse"></div>
-      </div>
-      <div class="row">
-        <div class="col l12 m12 s12">
-          <p class="center-align">Soy Front-end Developer y Licenciada en Diseño Gráfico. Me inspira mucho ser parte de la evolución de la comunicación gráfica a través de la tecnología. Me interesa desarrollarme en el área de UX y UI pues me permite combinar mis conocimientos y habilidades para crear soluciones integrales pensadas en las necesidades del usuario. Soy fan del trabajo en equipo, ya que creo que la diversidad de talentos enfocados en un mismo objetivo logran resultados asombrosos. He trabajado bajo la metodología Agile.</p>
+        <div class="col m4 s12"><img src="img/foto-marco.png" class="foto"></div>
+        <div class="col m8 s12">
+          <div class="row"><img src="img/logo_principal.png" class="center-align logo pulse">
+            <p class="center-align">Soy Front-end Developer y Licenciada en Diseño Gráfico. Me inspira mucho ser parte de la evolución de la comunicación gráfica a través de la tecnología. Me interesa desarrollarme en el área de UX/UI pues me permite combinar mis conocimientos y habilidades para crear soluciones integrales pensadas en las necesidades del usuario. Soy fan del trabajo en equipo, ya que creo que la diversidad de talentos enfocados en un mismo objetivo logran resultados asombrosos. He trabajado bajo la metodología Agile.</p>
+          </div>
         </div>
       </div>
     </div>
-    <section id="proyectos">
+    <section>
       <div class="row"><img src="img/titulo_proyectos.png" class="titulo pulse"><a href="#inicio" class="btn-floating btn-small waves-effect waves-light cyan float"><i class="material-icons">arrow_upward</i></a></div>
     </section>
     <div class="container-fluid bgr">
-      <div class="container">
+      <div id="proyectos" class="container">
         <div class="row center-align">
           <div class="col l6 m6 s12">
             <div class="card margin_card">
-              <div class="card-image waves-effect waves-block waves-light"><img src="img/triangle.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator grey-text text-darken-4">Triangle Template<i class="material-icons right">more_vert</i></span>
-                <p><a href="https://parigutierrez.github.io/triangle_template/public/home" target="_blank">Ir al sitio</a></p>
-              </div>
+              <div class="card-image waves-effect waves-block waves-light"><img src="img/proyectos/triangleCard.png" class="activator"></div>
+              <div class="card-content"><span class="card-title activator grey-text text-darken-4">Triangle Template<i class="material-icons right">more_vert</i></span></div>
               <div class="card-reveal"><span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
-                <p>Proyecto de Prototyping utilizando preprocesador de HTML PUG, mixins y SASS</p><a href="https://github.com/parigutierrez/triangle_template" target="_blank">Ir al repositorio</a>
+                <p>Proyecto de Prototyping utilizando preprocesador de HTML PUG, mixins y SASS</p><a href="https://github.com/parigutierrez/triangle_template" target="_blank">Ver código </></a>
+                <div class="row"><a href="https://parigutierrez.github.io/triangle_template/public/home" target="_blank">Ir al sitio</a></div>
               </div>
             </div>
           </div>
           <div class="col l6 m6 s12">
             <div class="card margin_card">
-              <div class="card-image waves-effect waves-block waves-light"><img src="img/proyectos/applove.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-              </div>
-              <div class="card-reveal"><span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <div class="card-image waves-effect waves-block waves-light"><img src="img/proyectos/experimentaCard.png" class="activator"></div>
+              <div class="card-content"><span class="card-title activator grey-text text-darken-4">Socios Experimenta<i class="material-icons right">more_vert</i></span></div>
+              <div class="card-reveal"><span class="card-title grey-text text-darken-4">HTML5, CSS3<i class="material-icons right">close</i></span>
+                <p>Proyecto colaborativo, Sección de socios de empresa Experimenta</p><a href="https://github.com/parigutierrez/socios_experimenta" target="_blank">Ver código </></a>
+                <div class="row"><a href="https://parigutierrez.github.io/socios_experimenta/" target="_blank">Ir al sitio</a></div>
               </div>
             </div>
           </div>
@@ -71,27 +69,83 @@
         <div class="row">
           <div class="col l6 m6 s12">
             <div class="card margin_card">
-              <div class="card-image waves-effect waves-block waves-light"><img src="img/proyectos/applove.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-              </div>
+              <div class="card-image waves-effect waves-block waves-light"><img src="img/proyectos/apploveCard.png" class="activator"></div>
+              <div class="card-content"><span class="card-title activator grey-text text-darken-4">Applove<i class="material-icons right">more_vert</i></span></div>
               <div class="card-reveal"><span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <p>Maquetación y estilos HTML CSS3</p><a href="https://parigutierrez.github.io/Applove2-con-Grid" target="_blank">Ver código </></a>
+                <div class="row"><a href="https://github.com/parigutierrez/Applove2-con-Grid/" target="_blank">Ir al sitio</a></div>
               </div>
             </div>
           </div>
           <div class="col l6 m6 s12">
             <div class="card margin_card">
-              <div class="card-image waves-effect waves-block waves-light"><img src="img/proyectos/applove.png" class="activator"></div>
-              <div class="card-content"><span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">This is a link</a></p>
-              </div>
+              <div class="card-image waves-effect waves-block waves-light"><img src="img/proyectos/GoogleCard.png" class="activator"></div>
+              <div class="card-content"><span class="card-title activator grey-text text-darken-4">Google Design<i class="material-icons right">more_vert</i></span></div>
               <div class="card-reveal"><span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p><a href="https://github.com/parigutierrez/designGoogle" target="_blank">Ver código </></a>
+                <div class="row"><a href="https://github.com/parigutierrez/designGoogle/" target="_blank">Ir al sitio</a></div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+                <div class="col s12 m6">
+                  <h5 class="header center-align">Imagen para centraldegas.com
+                    <div class="card horizontal small">
+                      <div class="card-image"><img src="img/proyectos/centralGasC.png"></div>
+                      <div class="card-stacked">
+                        <div class="card-content">
+                          <p>colaboración con elementos gráficos para sitio web de Central de Gas</p>
+                        </div>
+                        <div class="card-action"><a href="http://www.centraldegas.com/" target="_blank">Ir al sitio</a></div>
+                      </div>
+                    </div>
+                  </h5>
+                </div>
+                <div class="col s12 m6">
+                  <h5 class="header center-align">Trabajo en sitio web de MedicosPro
+                    <div class="card horizontal small">
+                      <div class="card-image"><img src="img/proyectos/medicospro.png"></div>
+                      <div class="card-stacked">
+                        <div class="card-content">
+                          <p>Imagen de marca de sitio web MedicosPro - Software</p>
+                        </div>
+                        <div class="card-action"><a href="https://medicospro.com/es/" target="_blank">Ir al sitio</a></div>
+                      </div>
+                    </div>
+                  </h5>
+                </div>
+      </div>
+      <div class="row">
+                <div class="col s12 m6">
+                  <h5 class="header center-align">Identidad corporativa
+                    <div class="card horizontal small">
+                      <div class="card-image"><img src="img/proyectos/actopanCard.png"></div>
+                      <div class="card-stacked">
+                        <div class="card-content">
+                          <p>Realización de diversos diseños de marca y publicidad</p>
+                        </div>
+                        <div class="card-action"><a href="https://www.behance.net/gallery/33284185/Identidad-corporativa" target="_blank">Ir al sitio</a></div>
+                      </div>
+                    </div>
+                  </h5>
+                </div>
+                <div class="col s12 m6">
+                  <h5 class="header center-align">Fotografía
+                    <div class="card horizontal small">
+                      <div class="card-image"><img src="img/proyectos/piecitos.png"></div>
+                      <div class="card-stacked">
+                        <div class="card-content">
+                          <p>Retratos, paisaje, producto y restauración fotográfica</p>
+                        </div>
+                        <div class="card-action"><a href="https://www.behance.net/gallery/33395535/Fotografia-Momentos" target="_blank">Ir al sitio</a></div>
+                      </div>
+                    </div>
+                  </h5>
+                </div>
       </div>
     </div>
     <section id="habilidades">
@@ -117,7 +171,7 @@
                 </div>
                 <div class="col l4 m4 s6"><img src="img/logos/AdobeGriss.png" class="img_habilidad center-align">
                   <h5 class="center-align">Software de Diseño</h5>
-                  <p class="center-align">Photoshop . Illustrator . InDesign</p>
+                  <p class="center-align">Illustrator . Photoshop  . InDesign</p>
                 </div>
                 <div class="col l4 m4 s6"><img src="img/logos/inglesGriss.png" class="img_habilidad center-align">
                   <h5 class="center-align">Idiomas</h5>
@@ -132,17 +186,7 @@
             <h5 class="white-text">Contáctame</h5>
             <p class="grey-text text-lighten-4">Me encantará participar en tus proyectos</p>
           </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a title="Llamar ahora" href="tel:4423717820" class="grey-text text-lighten-3">Móvil 4423717820<img src="img/logos/celGris.png" class="icono_contacto"></a></li>
-              <li><a title="Enviar Mail" href="mailto:parivash.gutierrez@gmail.com" class="grey-text text-lighten-3">E-mail<img src="img/logos/mailGris.png" class="icono_contacto"></a></li>
-              <li><a href="https://www.linkedin.com/in/parivash-guti%C3%A9rrez-0a769b45/" target="_blank" class="grey-text text-lighten-3">LinkedIn<img src="img/logos/linkedin-circleGris.png" class="icono_contacto"></a></li>
-              <li><a title="Ir a GitHub" href="https://github.com/parigutierrez" target="_blank" class="grey-text text-lighten-3">GitHub<img src="img/logos/github-Gris.png" class="icono_contacto"></a></li>
-              <li><a title="Ver proyectos de Diseño y Fotografía" href="https://www.behance.net/Parivash" target="_blank" class="grey-text text-lighten-3">Behance<img src="img/logos/behanceGris.png" class="icono_contacto"></a></li>
-              <li><a href="img/CV_Parivash_Gutierrez2.pdf" download="Parivash_Gutiérrez_CV" class="grey-text text-lighten-3">Descarga mi CV<img src="img/logos/pdf-flatGris.png" class="icono_contacto"></a></li>
-            </ul>
-          </div>
+          <div class="col l4 offset-l2 s12"><a title="Llamar ahora" href="tel:4423717820" class="padd grey-text text-lighten-3"><img src="img/logos/celGris.png" class="icono_contacto"></a><a title="Enviar Mail" href="mailto:parivash.gutierrez@gmail.com" class="padd grey-text text-lighten-3"><img src="img/logos/mailGris.png" class="icono_contacto"></a><a title="Ver perfil" href="https://www.linkedin.com/in/parivash-guti%C3%A9rrez-0a769b45/" target="_blank" class="padd grey-text text-lighten-3"><img src="img/logos/linkedin-circleGris.png" class="icono_contacto"></a><a title="Ir a GitHub" href="https://github.com/parigutierrez" target="_blank" class="padd grey-text text-lighten-3"><img src="img/logos/github-Gris.png" class="icono_contacto"></a><a title="Ver proyectos de Diseño y Fotografía" href="https://www.behance.net/Parivash" target="_blank" class="padd grey-text text-lighten-3"><img src="img/logos/behanceGris.png" class="icono_contacto"></a><a title="Descargar CV" href="img/CV_Parivash_Gutierrez2.pdf" download="Parivash_Gutiérrez_CV" class="padd grey-text text-lighten-3"><img src="img/logos/pdf-flatGris.png" class="icono_contacto"></a></div>
         </div>
       </div>
       <div class="footer-copyright">
