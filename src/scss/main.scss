@@ -63,10 +63,16 @@ p{
 	#habilidades{
 		display:none;
 	}
+	#imgproy{
+		display:none;
+	}
 }
 
 @media only screen and (min-width: 701px){
 	#habilidades2{
+		display:none;
+	}
+	#imgproymobile{
 		display:none;
 	}
 }
