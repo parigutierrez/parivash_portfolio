@@ -51,7 +51,7 @@ html(lang="es")
 		.container-fluid.bgr#proyectos
 			.row
 				img.titulo.pulse#imgproy(src="img/titulo_proyectos.png")
-				img.titulo.pulse#imgproymobile(src="img/titulo_proyectos_pq.png")
+				img.titulo.pulse.titulo_pq#imgproymobile(src="img/titulo_proyectos_pq.png")
 				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
 					i.material-icons arrow_upward
 			.container.margn-top
@@ -115,7 +115,8 @@ html(lang="es")
 									a(href="https://parigutierrez.github.io/designGoogle/index.html" target="_blank") Ir al sitio
 		.container-fluid.gray-bg#personales
 			.row
-				img.tituloL.pulse(src="img/titulo_diseño.png")
+				img.tituloL.pulse#imgdiseno(src="img/titulo_diseño.png")
+				img.titulo.pulse.titulo_pq#imgdisenomobile(src="img/titulo_diseño_pq.png")
 				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
 					i.material-icons arrow_upward
 			.container
@@ -138,7 +139,9 @@ html(lang="es")
 					+personales("Fotografía","piecitos","Retratos, paisaje, producto y edición fotográfica","https://www.behance.net/gallery/33395535/Fotografia-Momentos")
 		section#habilidades-titulo
 			.row
-				img.titulo.pulse(src="img/titulo_habilidades.png")
+				img.titulo.pulse#imghabil(src="img/titulo_habilidades.png")
+				img.titulo.pulse.titulo_pq#imghabilmobile(src="img/titulo_habilidades_pq.png")
+
 				a.btn-floating.btn-small.waves-effect.waves-light.cyan.float(href="#inicio")
 					i.material-icons arrow_upward
 				mixin habilidad(imagen,titulo,descripcion)

@@ -42,6 +42,19 @@ p{
 	padding-right: 7px;
 }
 
+.titulo_pq{
+
+}
+	#imgproymobile{
+		width: 36%;
+	}
+	#imgdisenomobile{
+		width: 56%;
+	}
+	#imghabilmobile{
+		width: 40%;
+	}
+
 @media only screen and (max-width: 700px){
 	.foto {
 		width: 68%;
@@ -66,6 +79,12 @@ p{
 	#imgproy{
 		display:none;
 	}
+	#imgdiseno{
+		display:none;
+	}
+	#imghabil{
+		display:none;
+	}
 }
 
 @media only screen and (min-width: 701px){
@@ -73,6 +92,12 @@ p{
 		display:none;
 	}
 	#imgproymobile{
+		display:none;
+	}
+	#imgdisenomobile{
+		display:none;
+	}
+	#imghabilmobile{
 		display:none;
 	}
 }
